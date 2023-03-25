@@ -10,87 +10,98 @@
 </head>
 
 <body>
-	<header>
-		<h1>ByteWorks</h1>
-		<h1>Bienvenido a </h1>
 
-
-		<h1>Tienda de Hardware</h1>
-
-		<nav>
-			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Productos</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav>
-		<br>
-		<h2>Ofertas especiales</h2>
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	<!--Barra de navegacion-->
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="img/logo.png" alt="logo" width="35" height="35" class="d-inline-block align-text-top">
+				ByteWorks 
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+				
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="busqueda">
+					<button class="btn btn-outline-success" type="submit">Buscar</button>
+				</form>
 			</div>
-			<div class="carousel-inner">
-			  <div class="carousel-item active">
+		</div>
+	</nav>
+
+	<br>
+	<h2>Ofertas especiales</h2>
+	<!--Carrusel-->
+
+	<div id="carrusel1" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carrusel1" data-bs-slide-to="0" class="active" aria-current="true"
+				aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carrusel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carrusel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
 				<img src="Img/ProducDesta/carrusel2.jpg" class="d-block w-100" alt="...">
-			  </div>
-			  <div class="carousel-item">
-				<img src="Img/ProducDesta/Omen.jpg" class="d-block w-100" alt="...">
-			  </div>
-			  <div class="carousel-item">
-				<img src="Img/ProducDesta/hyperx-brand-banner0588.jpg" class="d-block w-100" alt="...">
-			  </div>
 			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Anterior</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="visually-hidden">Siguiente</span>
-			</button>
-		  </div>
-	</header>
-		
-		<section>
-			<h2>Ofertas especiales</h2>
-			<article>
-				<img src="">
-				<h3></h3>
-				<p>Crea tu Equipo con la Serie 40 de Aorus.</p>
-				<button>Comprar</button>
-			</article>
-			<article>
-				<img src="" alt="Producto 2">
-				<h3>Producto 2</h3>
-				<p>Descripción del Producto 2</p>
-				<button>Comprar</button>
-			</article>
-			<article>
-				<img src="producto3.jpg" alt="Producto 3">
-				<h3>Producto 3</h3>
-				<p>Descripción del Producto 3</p>
-				<button>Comprar</button>
-			</article>
-		</section>
-		</main>
-		<footer>
-			<p>Tienda de Hardware - Todos los derechos reservados</p>
-		</footer>
+			<div class="carousel-item">
+				<img src="Img/ProducDesta/Omen.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img src="Img/ProducDesta/hyperx-brand-banner0588.jpg" class="d-block w-100" alt="...">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carrusel1" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Anterior</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carrusel1" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Siguiente</span>
+		</button>
+	</div>
+
+
+	<section>
+		<article>
+			<img src="">
+			<h3></h3>
+			<p>Crea tu Equipo con la Serie 40 de Aorus.</p>
+			<button>Comprar</button>
+		</article>
+		<article>
+			<img src="" alt="Producto 2">
+			<h3>Producto 2</h3>
+			<p>Descripción del Producto 2</p>
+			<button>Comprar</button>
+		</article>
+		<article>
+			<img src="producto3.jpg" alt="Producto 3">
+			<h3>Producto 3</h3>
+			<p>Descripción del Producto 3</p>
+			<button>Comprar</button>
+		</article>
+	</section>
+	</main>
+	<footer>
+		<p>Tienda de Hardware - Todos los derechos reservados</p>
+	</footer>
 
 
 
 
-		<script src="https://code.jquery.com/jquery-3.6.4.min.js"
-			integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-			crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-			integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-			crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+		integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+		integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>

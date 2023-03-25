@@ -13,11 +13,25 @@ body {
 
 /* Estilos del encabezado */
 
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
+
+
+.navbar{
+	background-color: #111616;
 }
+
+
+#busqueda{
+	width: 100%;
+    height: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+
+
 
 h1 {
 	font-size: 36px;
@@ -39,6 +53,21 @@ nav a {
 	color: #fff;
 	text-decoration: none;
 }
+
+/* Carrusel */
+.carousel .carousel-control-prev {
+	position: absolute;
+	left: -5%;
+	z-index: 1;
+	color: #0a0a0a;
+  }
+
+.carousel .carousel-control-next {
+	position: absolute;
+	right: -5%;
+	z-index: 1;
+	color: #0a0a0a;
+  }
 
 /* Estilos del contenido principal */
 
