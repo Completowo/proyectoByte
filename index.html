@@ -15,8 +15,8 @@
 	<nav class="navbar navbar-expand-lg navbar-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
-				<img src="img/logo.png" alt="logo" width="35" height="35" class="d-inline-block align-text-top">
-				ByteWorks 
+				<img src="img/logo.png" alt="logo" width="35" height="35" class="d-inline-block align-text-top" h3="ByteWorks" style="color: rgb(255, 0, 0);">
+				<h3 style="color: dimgray;">ByteWorks</h3>
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -28,13 +28,14 @@
 				<form class="d-flex" role="search">
 					<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="busqueda">
 					<button class="btn btn-outline-success" type="submit">Buscar</button>
+					<button class="btn btn-outline-success" type="submit">Ingresar Usuario</button>
 				</form>
 			</div>
 		</div>
 	</nav>
 
 	<br>
-	<h2>Ofertas especiales</h2>
+	<h2>Conoce Nuestros Productos:</h2>
 	<!--Carrusel-->
 
 	<div id="carrusel1" class="carousel slide" data-bs-ride="carousel">
@@ -85,10 +86,30 @@
 			<p>Descripción del Producto 3</p>
 			<button>Comprar</button>
 		</article>
+		<div class="form-group">
+			<label for="tree-search">Buscar en el árbol:</label>
+			<div class="dropdown">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="tree-search-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Seleccione una categoría
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="tree-search-dropdown">
+				<input class="form-control" type="text" id="tree-search" placeholder="Buscar...">
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Categoría 1</a>
+				<a class="dropdown-item" href="#">Categoría 2</a>
+				<a class="dropdown-item" href="#">Subcategoría 1.1</a>
+				<a class="dropdown-item" href="#">Subcategoría 1.2</a>
+				<a class="dropdown-item" href="#">Subcategoría 2.1</a>
+				<a class="dropdown-item" href="#">Subcategoría 2.2</a>
+			  </div>
+			</div>
+		  </div>
+		  
+		
 	</section>
 	</main>
 	<footer>
-		<p>Tienda de Hardware - Todos los derechos reservados</p>
+		<p>ByteWorks- Todos los derechos reservados</p>
 	</footer>
 
 
