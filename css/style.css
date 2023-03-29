@@ -4,7 +4,12 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: Arial, sans-serif;
+	font-family: 'roboto' ,'sans-serif';
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
 }
 
 body {
@@ -13,24 +18,57 @@ body {
 
 /* Estilos del encabezado */
 
+header{
+	display: flex;
+	background-color: #333333;
+	justify-content: space-between;
+	align-items: center;
+	color: #ccc;
+	height: 100px;
+	padding: 10px;
 
+}
+.logo{
+	display: flex;
+	align-items: center;
 
-.navbar{
-	background-color: #111616;
+}
+.logo img{
+	width: 60px;
+	margin-right: 10px;
 }
 
+/* Caja de busqueda */
 
-#busqueda{
-	width: 100%;
-    height: 10%;
+form {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0;
-}
-
-
+  }
+  
+  input[type="text"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 500px;
+  }
+  
+  button[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	margin-left: 10px;
+	cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #3e8e41;
+  }
+  
 
 
 h1 {
@@ -55,19 +93,7 @@ nav a {
 }
 
 /* Carrusel */
-.carousel .carousel-control-prev {
-	position: absolute;
-	left: -5%;
-	z-index: 1;
-	color: #0a0a0a;
-  }
 
-.carousel .carousel-control-next {
-	position: absolute;
-	right: -5%;
-	z-index: 1;
-	color: #0a0a0a;
-  }
 
 /* Estilos del contenido principal */
 
@@ -125,8 +151,7 @@ button:hover {
 /* Estilos del pie de página */
 
 footer{
-	background-color: #333;
+	background-color: #333333;
 	color: #fff;
 	padding: 20px;
-	text-align
 }

@@ -1,17 +1,18 @@
-body {
+body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: linear-gradient(120deg, #000000, #273746); 
+    background-color: linear-gradient(blue, red); 
     height: 100vh;
-}
+  }
+
 .formulario{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: white;
+
     border-radius: 10px;
     
 }

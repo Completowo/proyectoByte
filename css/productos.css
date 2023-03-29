@@ -25,20 +25,9 @@ button:hover{
 }
 
 
-.navbar{
-	background-color: #111616;
-}
 
 
-#busqueda{
-	width: 100%;
-    height: 10%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-}
+
 
 footer{
 	background-color: #333;
