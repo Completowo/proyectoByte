@@ -1,17 +1,96 @@
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'roboto' ,'sans-serif';
 }
 
 h2{ font-size: 1.25em;}
 p{ font-size: 1;}
 
 
-body{
-    font-family: 'roboto', 'sans-serif';
-    margin: 0;
+
+
+/* Estilos del encabezado */
+
+
+a{
+	text-decoration: none;
+	color: #ffffff;
 }
 
+header{
+	display: flex;
+	background-color: #333333;
+	justify-content: space-between;
+	align-items: center;
+	color: #ccc;
+	min-height: 100px;
+	padding: 10px;
 
+}
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo img{
+	width: 60px;
+	margin-right: 10px;
+}
+
+/* Caja de busqueda */
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  input[type="text"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	width: 500px;
+  }
+  
+  button[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	margin-left: 10px;
+	cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #3e8e41;
+  }
+
+  nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (max-width:1000px){
+	header{
+		flex-direction: column;
+	}
+}
 
 button{
     border-radius: 15px;
@@ -25,20 +104,9 @@ button:hover{
 }
 
 
-.navbar{
-	background-color: #111616;
-}
 
 
-#busqueda{
-	width: 100%;
-    height: 10%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-}
+
 
 footer{
 	background-color: #333;
@@ -61,6 +129,7 @@ footer{
     width: 50%;
     text-align: initial;
     padding: 0px 30px;
+    margin: 10px;
 }
  
 
@@ -69,8 +138,8 @@ footer{
     background-image: url("/img/productos/placamsi.jpg");
     background-size: cover;
     background-position: center center;
-    height: 300px;
-    width: 400px;
+    height: 400px;
+    width: 500px;
     border: solid;
     margin-top: 10px;
     margin-right: 40px;
