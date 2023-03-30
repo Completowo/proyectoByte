@@ -24,7 +24,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	color: #ccc;
-	height: 100px;
+	min-height: 100px;
 	padding: 10px;
 
 }
@@ -92,8 +92,6 @@ nav a {
 	text-decoration: none;
 }
 
-/* Carrusel */
-
 
 /* Estilos del contenido principal */
 
@@ -147,6 +145,12 @@ button {
 
 button:hover {
 	background-color: #444;
+}
+
+@media (max-width:1000px){
+	header{
+		flex-direction: column;
+	}
 }
 /* Estilos del pie de página */
 
