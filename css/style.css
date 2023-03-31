@@ -147,7 +147,7 @@ button:hover {
 	background-color: #444;
 }
 
-@media (max-width:1000px){
+@media (max-width:1050px){
 	header{
 		flex-direction: column;
 	}
