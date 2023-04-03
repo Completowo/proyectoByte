@@ -149,28 +149,18 @@ button:hover {
 	background-color: #444;
 }
 /* Cuerpo index */
-#imges{
+.imges{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#imges .img1{
-	width: 400px;
-	height: 550px;
-	margin-left: 15px;
-}
-#imges .img2{
+.imges .img1{
 	width: 400px;
 	height: 550px;
 	margin-left: 15px;
 }
 
-#imges .img3{
-	width: 400px;
-	height: 550px;
-	margin-left: 15px;
-}
 
 @media (max-width:1060px){
 	header{
@@ -180,7 +170,7 @@ button:hover {
 }
 
 @media (max-width:1050px){
-	#imges{
+	.imges{
 		flex-direction: column;
 		justify-content: center;
 		margin-left: auto;
@@ -222,42 +212,23 @@ button:hover {
   .footer-clean ul a:hover {
 	opacity:1;
   }
-  
-  .footer-clean .item.social {
-	text-align:right;
-  }
-  
-  @media (max-width:767px) {
+
+  @media (max-width:1050px) {
 	.footer-clean .item {
 	  text-align:center;
 	  padding-bottom:20px;
 	}
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1050px) {
 	.footer-clean .item.social {
 	  text-align:center;
 	}
   }
   
-  .footer-clean .item.social > a {
-	font-size:24px;
-	width:40px;
-	height:40px;
-	line-height:40px;
-	display:inline-block;
-	text-align:center;
-	border-radius:50%;
-	border:1px solid #ccc;
-	margin-left:10px;
-	margin-top:22px;
-	color:inherit;
-	opacity:0.75;
-  }
+
   
-  .footer-clean .item.social > a:hover {
-	opacity:0.9;
-  }
+
   
   @media (max-width:991px) {
 	.footer-clean .item.social > a {
@@ -283,3 +254,12 @@ button:hover {
 	margin-top: 15px;
 }
 
+
+.container-carro h2{
+	justify-content: center;
+	align-items: center;
+}
+
+.img-carro{
+	width: 800px;
+}
