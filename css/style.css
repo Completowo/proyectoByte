@@ -300,7 +300,7 @@ button:hover {
 	border-radius: 5px;
 	font-size: 16px;
 	width: 400px;
-	margin-bottom: 16px;
+	margin-bottom: 15px;
 	
 }
 .style-form-msg{
@@ -312,4 +312,28 @@ button:hover {
 	border-radius: 6px;
 	height: 40px;
 	width: 60px;
+}
+
+#enviar{
+	background-color: #f5f5f5;
+	color: #333;
+}
+.errorNom{
+	color: #ff0000;
+	margin-bottom: 16px;
+}
+
+.errorEmail{
+	color: #ff0000;
+	margin-bottom: 16px;
+}
+
+.errorAsun{
+	color: #ff0000;
+	margin-bottom: 16px;
+}
+
+.errorMsg{
+	color: #ff0000;
+	margin-bottom: auto;
 }
