@@ -177,9 +177,9 @@ button:hover {
 	.imges{
 		flex-direction: column;
 		justify-content: center;
-		margin-left: auto;
 	}
 }
+
 /* Estilos del pie de página */
 
 
@@ -304,7 +304,7 @@ button:hover {
 	
 }
 .style-form-msg{
-	height: 70px;
+	height: 120px;
 	margin-bottom: 16px;
 }
 
