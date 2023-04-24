@@ -1,3 +1,4 @@
+/**jquery validacion formulario web */
 $(document).ready(function(){
     $(".errorNom").hide();
     $(".errorEmail").hide();
@@ -52,3 +53,8 @@ $(document).ready(function(){
 
 
 })
+
+
+/**jscript validacion login */
+
+

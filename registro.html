@@ -34,15 +34,32 @@
                      <div class="input-box">
                         <header>Crear Cuenta</header>
                         <div class="input-field">
-                            <input type="text" class="input" id="email" required autocomplete="off">
-                            <label for="email">Email</label>
+                            <input type="text" class="input" id="nombreReg" required autocomplete="off">
+                            <label for="nombreReg">Nombre</label>
+                            
                         </div>
                         <div class="input-field">
-                            <input type="password" class="input" id="password" required>
-                            <label for="password">Contraseña</label>
+                            <input type="text" class="input" id="rutReg" required autocomplete="off">
+                            <label for="rutReg">RUT</label>
+                         
                         </div>
                         <div class="input-field">
-                            <input type="submit" class="submit" value="Crear Cuenta">
+                            <input type="text" class="input" id="emailReg" required autocomplete="off">
+                            <label for="emailReg">Email</label>
+                            
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="input" id="passwordReg" required>
+                            <label for="passwordReg">Contraseña</label>
+                          
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="input" id="passwordConReg" required>
+                            <label for="passwordConReg">Confirme Contraseña</label>
+                        
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" id="enviarReg" onclick="enviarForm()" class="submit" value="Crear Cuenta">
                             
                         </div>
                         <div class="signin">
@@ -53,6 +70,18 @@
             </div>
         </div>
     </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+		integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+		integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+		crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
 
