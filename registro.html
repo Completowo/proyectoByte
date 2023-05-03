@@ -31,49 +31,84 @@
                     </div>
                 </div>
                 <div class="col-md-6 right">
-                     <div class="input-box">
+                    <div class="input-box">
                         <header>Crear Cuenta</header>
-                        <div class="input-field">
+                        <form id="formulario">
+                          <div class="input-field">
                             <input type="text" class="input" id="nombreReg" required autocomplete="off">
                             <label for="nombreReg">Nombre</label>
-                            
-                        </div>
-                        <div class="input-field">
+                            <i class="fas-check-circule"></i> 
+                            <i class="fas fa-exclamation-circule"></i>
+                          </div>
+                          <div class="input-field">
                             <input type="text" class="input" id="rutReg" required autocomplete="off">
                             <label for="rutReg">RUT</label>
-                         
-                        </div>
-                        <div class="input-field">
+                          </div>
+                          <div class="input-field">
                             <input type="text" class="input" id="emailReg" required autocomplete="off">
                             <label for="emailReg">Email</label>
-                            
-                        </div>
-                        <div class="input-field">
+                          </div>
+                          <div class="input-field">
                             <input type="password" class="input" id="passwordReg" required>
                             <label for="passwordReg">Contraseña</label>
-                          
-                        </div>
-                        <div class="input-field">
+                          </div>
+                          <div class="input-field">
                             <input type="password" class="input" id="passwordConReg" required>
                             <label for="passwordConReg">Confirme Contraseña</label>
-                        
-                        </div>
-                        <div class="input-field">
-                            <input type="submit" id="enviarReg" onclick="enviarForm()" class="submit" value="Crear Cuenta">
-                            
-                        </div>
+                          </div>
+                          <div class="input-field">
+                            <input type="submit" id="enviarReg" class="submit" value="Crear Cuenta" id="warnings" class="warnings">
+                          </div>
+                        </form>
                         <div class="signin">
-                            <span>¿Ya tienes cuenta?<a href="login.html"> Ingresa acá.</a></span>
+                          <span>¿Ya tienes cuenta?<a href="login.html"> Ingresa acá.</a></span>
                         </div>
-                     </div>
+                      </div>
+                      
                 </div>
             </div>
         </div>
     </div>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        <!-- FOOTER-->
+        <div class="footer-clean">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Información</h3>
+                            <ul>
+                                <li><a href="#">Despachos</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Servicio al cliente</h3>
+                            <ul>
+                                <li><a href="#">Política de cambios y devolución</a></li>
+                                <li><a href="#">Política de privacidad</a></li>
+                                <li><a href="#">Términos y condiciones</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>Contáctanos</h3>
+                            <ul>
+                                <li><i class="fa-solid fa-phone"></i><a href="#"> +569 66505847</a></li>
+                                <li><i class="fa-sharp fa-solid fa-envelope"></i><a href="#"> contacto@byte.cl</a></li>
+                                <li><i class="fa-solid fa-map"></i><a href="#"> Lun a vie 10:00 a 17:30</a></li>
+                                <li><i class="fa-solid fa-address-book"></i><a href="/contacto.html"> Formulario web</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copy">
+                    <p>ByteWorks ©2023</p>
+                </div>
+            </footer>
+        </div>
+    
+<!-- Enlaces de íconos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-ElJixTmfTmLLsNNihmZjtiULJXQxh8MzSFXbYcYoyvzlL2wCieG4lHJAbCZ4g6U9pKU+ma08tbDpGJyKse+Lw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"
 		integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -81,7 +116,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
 		integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
 		crossorigin="anonymous"></script>
-	<script src="js/script.js"></script>
+
+	<script src="js/registro.js"></script>
 </body>
 </html>
 

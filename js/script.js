@@ -55,6 +55,6 @@ $(document).ready(function(){
 })
 
 
-/**jscript validacion login */
+
 
 
