@@ -20,6 +20,29 @@
 
 
 <body>
+    <!--Barra de navegacion-->
+	<header>
+		<a href="/index.html" class="logo">
+			<img src="/Img/logo.png" alt="logo empresa">
+			<div class="byteworks">
+				<h2>Byteworks</h2>
+			</div>
+		</a>
+
+		<form class="busqueda" method="get">
+			<input type="text" placeholder="Buscar">
+			<button type="submit">Buscar</button>
+		</form>
+
+		<nav>
+			<ul>
+				<li><a href="/login.html">Iniciar Sesion</a></li>
+				<li>|</li>
+				<a href="carro.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+			</ul>
+		</nav>
+	</header>
+
     <div class="wrapper">
         <div class="container main">
             <div class="row">
@@ -32,39 +55,39 @@
                 </div>
                 <div class="col-md-6 right">
                     <div class="input-box">
-                        <header>Crear Cuenta</header>
+                        <h3>Crear Cuenta</h3>
                         <form id="formulario">
                           <div class="input-field">
-                            <input type="text" class="input" id="nombreReg" required autocomplete="off">
+                            <input type="text" class="input"  required autocomplete="off" name="nombreReg">
                             <label for="nombreReg">Nombre</label>
                             <i class="fas-check-circule"></i> 
                             <i class="fas fa-exclamation-circule"></i>
                           </div>
                           <div class="input-field">
-                            <input type="text" class="input" id="rutReg" required autocomplete="off">
+                            <input type="text" class="input"  required autocomplete="off" name="rutReg">
                             <label for="rutReg">RUT</label>
                           </div>
                           <div class="input-field">
-                            <input type="text" class="input" id="emailReg" required autocomplete="off">
+                            <input type="text" class="input:""  required autocomplete="off" name="emailReg">
                             <label for="emailReg">Email</label>
                           </div>
                           <div class="input-field">
-                            <input type="password" class="input" id="passwordReg" required>
+                            <input type="password" class="input"  required name="passwordReg">
                             <label for="passwordReg">Contraseña</label>
                           </div>
                           <div class="input-field">
-                            <input type="password" class="input" id="passwordConReg" required>
+                            <input type="password" class="input"  required name="passwordConReg">
                             <label for="passwordConReg">Confirme Contraseña</label>
                           </div>
                           <div class="input-field">
-                            <input type="submit" id="enviarReg" class="submit" value="Crear Cuenta" id="warnings" class="warnings">
+                            <input type="submit" id="enviarReg" class="submit" value="Crear Cuenta" >
                           </div>
                         </form>
                         <div class="signin">
                           <span>¿Ya tienes cuenta?<a href="login.html"> Ingresa acá.</a></span>
                         </div>
                       </div>
-                      
+
                 </div>
             </div>
         </div>
