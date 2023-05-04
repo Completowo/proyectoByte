@@ -343,5 +343,9 @@ span a:hover{
 	width: 800px;
 }
 
+#error-message {
+  color: red;
+}
+
 
 

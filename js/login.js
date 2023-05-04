@@ -1,24 +1,21 @@
-const password = process.env.PASSWORD;
-const express = require('express');
-const app = express();
-app.use(express.json());
+const loginForm = document.getElementById('login-form');
+const errorMessage = document.getElementById('error-message');
 
-app.get('/', (req, res) => {
-    res.send('Bienvenio a ByteWord estimado Cliente.');
-});
+loginForm.addEventListener('submit', (event) => {
+  event.preventDefault(); // Previene el comportamiento por defecto del formulario
 
-app.post('/login', (req, res) => {
-    const { username, password } = req.body;
-    if (username === 'admin' && password === 'admin') {
-        res.status(200).json({
-            message: 'Login successful',
-            username,
-            password
-        });
-        return;
-    }
-    res.status(401).json({
-        message: 'Login failed'
-    });
+  const email = event.target.emailLog.value;
+  const password = event.target.passwordLog.value;
+
+  if (email === '' || password === '') {
+    errorMessage.textContent = 'Ingrese sus datos correctamente.'; // Cambia el mensaje de error
     return;
+  }
+
+  // Aquí iría la lógica para enviar los datos a la API de login
+  // Y recibir la respuesta correspondiente
+
+  errorMessage.textContent = ''; // Borra el mensaje de error
+  alert('Login exitoso!');
+  // Aquí iría el redireccionamiento a la página correspondiente
 });
