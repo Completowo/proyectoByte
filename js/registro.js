@@ -1,88 +1,48 @@
-const formulario = document.getElementById('formulario');
-const nombreReg = document.getElementsByName('nombreReg')[0];
-const rutReg = document.getElementsByName('rutReg')[0];
-const emailReg = document.getElementsByName('emailReg')[0];
-const passwordReg = document.getElementsByName('passwordReg')[0];
-const passwordConReg = document.getElementsByName('passwordConReg')[0];
 
-formulario.addEventListener('submit', function(event) {
-  event.preventDefault();
 
-  if (validarNombre(nombreReg) && validarRut(rutReg) && validarEmail(emailReg) && validarPassword(passwordReg) && validarPasswordCon(passwordReg, passwordConReg)) {
-    alert('Formulario enviado correctamente');
-    formulario.reset();
-  }
+const nombre = document.getElementById("nombreReg");
+const email = document.getElementById("emailReg");
+const password = document.getElementById("passwordReg");
+const rut = document.getElementById("rutReg");
+const confirmPassword = document.getElementById("passwordReg1");
+const enviarRegistro = document.getElementById("enviarReg");
+
+enviarRegistro.addEventListener("click", () => {
+    if (nombre.value === "" || email.value === "" || password.value === "" || rut.value === "" || confirmPassword.value === "") {
+        alert("Todos los campos son obligatorios");
+        return;
+    } 
+    if (password.value!== confirmPassword.value) {
+        alert("Las contraseñas no coinciden");
+        return;
+    }
+    if (password.value.length < 6) {
+        alert("La contraseña debe tener al menos 6 caracteres");
+        return;
+    }
+    if (rut.value.length!== 9) {
+        alert("El RUT debe tener 9 caracteres");
+        return;
+    }
+    if (email.value.indexOf("@") === -1) {
+        alert("El correo electrónico debe tener al menos un @");
+        return;
+    }
+    if (email.value.indexOf(".") === -1) {
+        alert("El correo electrónico debe tener al menos un. ");
+        return;
+    }
+    if (email.value.indexOf(".")!== email.value.lastIndexOf(".")) {
+        alert("El correo electrónico debe tener un. ");
+        return;
+    }
+    if (email.value.indexOf("@")!== email.value.lastIndexOf("@")) {
+        alert("El correo electrónico debe tener un @");
+        return;
+    }
+
+    alert("Registro exitoso");
+    window.location.href = "index.html";
+
 });
 
-function validarNombre(nombre) {
-  if (nombre.value.trim() === '') {
-    setErrorFor(nombre, 'El nombre no puede estar vacío');
-    return false;
-  } else {
-    setSuccessFor(nombre);
-    return true;
-  }
-}
-
-function validarRut(rut) {
-  if (rut.value.trim() === '') {
-    setErrorFor(rut, 'El RUT no puede estar vacío');
-    return false;
-  } else if (!/^[0-9]+[-|‐]{1}[0-9kK]{1}$/.test(rut.value.trim())) {
-    setErrorFor(rut, 'El formato del RUT es inválido');
-    return false;
-  } else {
-    setSuccessFor(rut);
-    return true;
-  }
-}
-
-function validarEmail(email) {
-  if (email.value.trim() === '') {
-    setErrorFor(email, 'El email no puede estar vacío');
-    return false;
-  } else if (!/^\S+@\S+\.\S+$/.test(email.value.trim())) {
-    setErrorFor(email, 'El formato del email es inválido');
-    return false;
-  } else {
-    setSuccessFor(email);
-    return true;
-  }
-}
-
-function validarPassword(password) {
-  if (password.value.trim() === '') {
-    setErrorFor(password, 'La contraseña no puede estar vacía');
-    return false;
-  } else {
-    setSuccessFor(password);
-    return true;
-  }
-}
-
-function validarPasswordCon(password, passwordCon) {
-  if (passwordCon.value.trim() === '') {
-    setErrorFor(passwordCon, 'La confirmación de contraseña no puede estar vacía');
-    return false;
-  } else if (passwordCon.value.trim() !== password.value.trim()) {
-    setErrorFor(passwordCon, 'Las contraseñas no coinciden');
-    return false;
-  } else {
-    setSuccessFor(passwordCon);
-    return true;
-  }
-}
-
-function setErrorFor(input, message) {
-  const formControl = input.parentElement;
-  const errorMessage = formControl.querySelector('i.fa-exclamation-circule');
-  formControl.className = 'input-field error';
-  errorMessage.innerText = message;
-}
-
-function setSuccessFor(input) {
-  const formControl = input.parentElement;
-  const successIcon = formControl.querySelector('i.fas-check-circule');
-  formControl.className = 'input-field success';
-  successIcon.style.display = 'block';
-}
