@@ -1,48 +1,86 @@
+const formulario = document.getElementById("formulario");
+const nombreReg = document.getElementsByName("nombreReg")[0];
+const rutReg = document.getElementsByName("rutReg")[0];
+const emailReg = document.getElementsByName("emailReg")[0];
+const passwordReg = document.getElementsByName("passwordReg")[0];
+const passwordConReg = document.getElementsByName("passwordConReg")[0];
 
+const validarNombre = () => {
+  const nombre = nombreReg.value.trim();
+  if (nombre.length < 3 || nombre.length > 30) {
+    return false;
+  }
+  return true;
+};
 
-const nombre = document.getElementById("nombreReg");
-const email = document.getElementById("emailReg");
-const password = document.getElementById("passwordReg");
-const rut = document.getElementById("rutReg");
-const confirmPassword = document.getElementById("passwordReg1");
-const enviarRegistro = document.getElementById("enviarReg");
+const validarRut = () => {
+  const rut = rutReg.value.trim();
+  if (rut.length !== 9) {
+    return false;
+  }
+  return true;
+};
 
-enviarRegistro.addEventListener("click", () => {
-    if (nombre.value === "" || email.value === "" || password.value === "" || rut.value === "" || confirmPassword.value === "") {
-        alert("Todos los campos son obligatorios");
-        return;
-    } 
-    if (password.value!== confirmPassword.value) {
-        alert("Las contraseñas no coinciden");
-        return;
-    }
-    if (password.value.length < 6) {
-        alert("La contraseña debe tener al menos 6 caracteres");
-        return;
-    }
-    if (rut.value.length!== 9) {
-        alert("El RUT debe tener 9 caracteres");
-        return;
-    }
-    if (email.value.indexOf("@") === -1) {
-        alert("El correo electrónico debe tener al menos un @");
-        return;
-    }
-    if (email.value.indexOf(".") === -1) {
-        alert("El correo electrónico debe tener al menos un. ");
-        return;
-    }
-    if (email.value.indexOf(".")!== email.value.lastIndexOf(".")) {
-        alert("El correo electrónico debe tener un. ");
-        return;
-    }
-    if (email.value.indexOf("@")!== email.value.lastIndexOf("@")) {
-        alert("El correo electrónico debe tener un @");
-        return;
-    }
+const validarEmail = () => {
+  const email = emailReg.value.trim();
+  if (!email.includes("@") || !email.includes(".")) {
+    return false;
+  }
+  return true;
+};
 
-    alert("Registro exitoso");
-    window.location.href = "index.html";
+const validarPassword = () => {
+  const password = passwordReg.value.trim();
+  if (password.length < 6) {
+    return false;
+  }
+  return true;
+};
 
-});
+const validarPasswordCon = () => {
+  const passwordCon = passwordConReg.value.trim();
+  if (passwordCon !== passwordReg.value.trim()) {
+    return false;
+  }
+  return true;
+};
 
+const validarFormulario = (event) => {
+  event.preventDefault();
+  if (!validarNombre()) {
+    nombreReg.parentNode.classList.add("invalid");
+  } else {
+    nombreReg.parentNode.classList.remove("invalid");
+  }
+  if (!validarRut()) {
+    rutReg.parentNode.classList.add("invalid");
+  } else {
+    rutReg.parentNode.classList.remove("invalid");
+  }
+  if (!validarEmail()) {
+    emailReg.parentNode.classList.add("invalid");
+  } else {
+    emailReg.parentNode.classList.remove("invalid");
+  }
+  if (!validarPassword()) {
+    passwordReg.parentNode.classList.add("invalid");
+  } else {
+    passwordReg.parentNode.classList.remove("invalid");
+  }
+  if (!validarPasswordCon()) {
+    passwordConReg.parentNode.classList.add("invalid");
+  } else {
+    passwordConReg.parentNode.classList.remove("invalid");
+  }
+  if (
+    validarNombre() &&
+    validarRut() &&
+    validarEmail() &&
+    validarPassword() &&
+    validarPasswordCon()
+  ) {
+    formulario.submit();
+  }
+};
+
+formulario.addEventListener("submit", validarFormulario);

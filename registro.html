@@ -53,32 +53,47 @@
                     <div class="input-box">
                         <h3>Crear Cuenta</h3>
                         <form id="formulario">
-                          <div class="input-field">
-                            <input type="text" class="input"  required autocomplete="off" name="nombreReg">
-                            <label for="nombreReg">Nombre</label>
-                            <i class="fas-check-circule"></i> 
-                            <i class="fas fa-exclamation-circule"></i>
-                          </div>
-                          <div class="input-field">
-                            <input type="text" class="input"  required autocomplete="off" name="rutReg">
-                            <label for="rutReg">RUT</label>
-                          </div>
-                          <div class="input-field">
-                            <input type="text" class="input"  required autocomplete="off" name="emailReg">
-                            <label for="emailReg">Email</label>
-                          </div>
-                          <div class="input-field">
-                            <input type="password" class="input"  required name="passwordReg">
-                            <label for="passwordReg">Contraseña</label>
-                          </div>
-                          <div class="input-field">
-                            <input type="password" class="input"  required name="passwordConReg">
-                            <label for="passwordConReg">Confirme Contraseña</label>
-                          </div>
-                          <div class="input-field">
-                            <input type="submit" id="enviarReg" class="submit" value="Crear Cuenta" >
-                          </div>
-                        </form>
+                            <div class="input-field">
+                              <input type="text" class="input" required autocomplete="off" name="nombreReg">
+                              <label for="nombreReg">Nombre</label>
+                              <i class="fas fa-check-circle"></i> 
+                              <i class="fas fa-exclamation-circle"></i>
+                              <span class="error-message">El nombre debe tener un minimo 3 digitos y un maximo de 30.</span>
+                            </div>
+                            <div class="input-field">
+                              <input type="text" class="input" required autocomplete="off" name="rutReg">
+                              <label for="rutReg">RUT</label>
+                              <i class="fas fa-check-circle"></i> 
+                              <i class="fas fa-exclamation-circle"></i>
+                              <span class="error-message">El rut no debe tener el digito verificador.</span>
+                            </div>
+                            <div class="input-field">
+                              <input type="text" class="input" required autocomplete="off" name="emailReg">
+                              <label for="emailReg">Email</label>
+                              <i class="fas fa-check-circle"></i> 
+                              <i class="fas fa-exclamation-circle"></i>
+                              <span class="error-message">Su correo, debe tener @ y un .</span>
+                            </div>
+                            <div class="input-field">
+                              <input type="password" class="input" required name="passwordReg">
+                              <label for="passwordReg">Contraseña</label>
+                              <i class="fas fa-check-circle"></i> 
+                              <i class="fas fa-exclamation-circle"></i>
+                              <span class="error-message">La Contraseña debe tener un minimo de 6 digitos.</span>
+                            </div>
+                            <div class="input-field">
+                              <input type="password" class="input" required name="passwordConReg">
+                              <label for="passwordConReg">Confirme Contraseña</label>
+                              <i class="fas fa-check-circle"></i> 
+                              <i class="fas fa-exclamation-circle"></i>
+                              <span class="error-message">La Contraseña no coincide.</span>
+                            </div>
+                            <div class="input-field">
+                              <input type="submit" id="enviarReg" class="submit" value="Crear Cuenta">
+                            </div>
+                          </form>
+
+                          </form>
                         <div class="signin">
                           <span>¿Ya tienes cuenta?<a href="login.html"> Ingresa acá.</a></span>
                         </div>

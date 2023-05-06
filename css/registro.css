@@ -401,7 +401,7 @@ span a:hover {
     text-align: center;
     margin-top: 15px;
   }
-  
+
   
   .container-carro h2 {
     justify-content: center;
@@ -412,6 +412,104 @@ span a:hover {
     width: 800px;
   }
   
-  #error-message {
+  .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input:focus + .label,
+  .input:not(:placeholder-shown) + .label {
+    transform: translateY(-30px);
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .fa-check-circle,
+  .fa-exclamation-circle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    color: #ddd;
+  }
+  
+  .fa-check-circle {
+    color: green;
+  }
+  
+  .error-message {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    font-size: 14px;
+    color: red;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .input-field.invalid .fa-exclamation-circle {
     color: red;
   }
+  
+  .input-field.invalid .error-message {
+    opacity: 1;
+  }
+  
+  .submit {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit:hover {
+    background-color: #111;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
+
+  
+    
