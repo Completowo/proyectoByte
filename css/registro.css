@@ -412,15 +412,7 @@ span a:hover {
     width: 800px;
   }
   
-  .container {
-    width: 100%;
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
+  
   
   .input-field {
     position: relative;
@@ -508,6 +500,23 @@ span a:hover {
   @media screen and (max-width: 768px) {
     .container {
       padding: 10px;
+    }
+    #log {
+      max-width: 700px;
+      width: 100%;
+    }
+    #form-bus{
+      width: 100px;
+    }
+
+    .byteworks {
+      display: flex; /* Usa un diseño flexible para alinear el contenido */
+      align-items: center; /* Centra verticalmente el contenido */
+    }
+    
+    .logo img {
+      width:60px ;
+      margin-left: 20px; /* Ajusta el margen izquierdo para separar el logotipo del texto */
     }
   }
 
