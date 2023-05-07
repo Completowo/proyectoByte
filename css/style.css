@@ -351,6 +351,23 @@ button:hover {
 
 
 
-/*Registro y login*
+/*API TABLA*/
 
-.
+.tabla{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+tbody{
+	text-align: center;
+	justify-content: center;
+
+}
+
+.product-image{
+	width: 300px;
+	border: solid;
+}
+
+

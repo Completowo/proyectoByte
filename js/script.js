@@ -54,6 +54,22 @@ $(document).ready(function(){
 
 })
 
+$(document).ready(function () {  
+    $.ajax({  
+        type: "GET",  
+        url: "https://fakestoreapi.com/products/category/electronics",    
+        dataType: "json", 
+        success: function (data) {  
+              $.each(data, function(i,item){
+                var row = "<tr><td>" + item.id + "</td><td>" +
+                item.title + "</td><td><img class='product-image' src='" + 
+                item.image +"'></td><td>"+
+                item.description + "</td></tr>"					 
+                   $("#tabla>tbody").append(row);
+               });
+        },
+    });         
+}); 
 
 
 
