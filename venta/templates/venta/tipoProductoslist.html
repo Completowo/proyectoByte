@@ -28,9 +28,9 @@
 
 		<nav>
 			<ul>
-				<li><a href="/login.html">Iniciar Sesion</a></li>
+				<li><a href="{% url 'inicioSe' %}">Iniciar Sesion</a></li>
 				<li>|</li>
-				<a href="carro.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+				<a href="{% url 'carro' %}"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
 			</ul>
 		</nav>
 	</header>
@@ -57,7 +57,7 @@
             {% for tmp in Tproducto %}
                 <tr>
                     <td>{{tmp.TipoProductos}}</td>
-                    <td><a class="text-primary text-decoration-none" href="{% url 'tipoProducto_del' pk=tmp.id_tipoProducto %}">Eliminar</a></td>
+                    <td><a class="text-primary text-decoration-none"href="{% url 'tipoProducto_del' pk=tmp.id_tipoProducto %}">Eliminar</a></td>
                     <td><a class="text-primary text-decoration-none" href="{% url 'tipoProducto_edit' pk=tmp.id_tipoProducto %}">Modificar</a></td>
                 </tr>
             {% endfor %}

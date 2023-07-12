@@ -44,6 +44,21 @@ def contacto(request):
     context = {}
     return render(request, 'venta/contacto.html', context)
 
+def carro(request):
+    context = {}
+    return render(request, 'venta/carro.html', context)
+
+def api(request):
+    context = {}
+    return render(request, 'venta/api.html', context)
+
+def inicioSe(request):
+    context = {}
+    return render(request, 'venta/login.html', context)
+
+def registro(request):
+    context = {}
+    return render(request, 'venta/registro.html', context)
 
 def ProductosList(request):
     lista_productos = Productos.objects.raw('SELECT * FROM venta_productos')

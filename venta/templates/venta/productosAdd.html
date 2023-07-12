@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+  <header>
 		<a href='{% url "home" %}' class="logo">
 			<img src='{% static "img/logo.png" %}' alt="logo empresa">
 			<div class="byteworks">
@@ -28,9 +28,9 @@
 
 		<nav>
 			<ul>
-				<li><a href="/login.html">Iniciar Sesion</a></li>
+				<li><a href="{% url 'inicioSe' %}">Iniciar Sesion</a></li>
 				<li>|</li>
-				<a href="carro.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+				<a href="{% url 'carro' %}"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
 			</ul>
 		</nav>
 	</header>

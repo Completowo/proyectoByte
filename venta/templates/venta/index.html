@@ -30,9 +30,9 @@
 
 		<nav>
 			<ul>
-				<li><a href="/login.html">Iniciar Sesion</a></li>
+				<li><a href="{% url 'inicioSe' %}">Iniciar Sesion</a></li>
 				<li>|</li>
-				<a href="carro.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+				<a href="{% url 'carro' %}"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
 			</ul>
 		</nav>
 	</header>
@@ -154,7 +154,7 @@
                         <h3>Información</h3>
                         <ul>
                             <li><a href="#">Despachos</a></li>
-							<li><a href="api.html">Todos los productos</a></li>
+							<li><a href="{% url 'api' %}">Todos los productos</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-4 col-md-3 item">
